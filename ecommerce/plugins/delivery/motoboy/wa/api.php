@@ -9,7 +9,7 @@ $json = json_decode($reading['tudo'], true); if(is_array($json)){ foreach($json 
 
     for ($n=$value['cep_inicial']; $n<= $value['cep_final']; $n++) {
      echo 
-     '"id":"'. $n.'", "descricao":"'.$value['descricao'].'","min":"'.$value['peso_inicial'].'","max":"'.$value['peso_final'].'","valor":"'.$value['valor'].'",'
+     '"id_'.$n.'": { "descricao":"'.$value['descricao'].'","min":"'.$value['peso_inicial'].'","max":"'.$value['peso_final'].'","valor":"'.$value['valor'].'"},'
      ;
     }
 
