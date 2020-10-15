@@ -19,10 +19,9 @@ const min = data.id_<?php echo intval($_GET['id']); ?>.min;
 const peso = <?php echo $_GET['peso']; ?>;
 const valor = data.id_<?php echo intval($_GET['id']); ?>.valor;
 const descricao = data.id_<?php echo intval($_GET['id']); ?>.descricao;
-const box ="<input type='radio' style='cursor:pointer;white-space: nowrap' name='frete' id='motoboy' value='"+parseFloat(valor).toFixed(2).replace('.', ',')+"'><b> Dedicado</b><br> "+descricao+" valor R$ "+parseFloat(valor).toFixed(2).replace('.', ',');
+const box ="<input type='radio' onchange='D3("+parseFloat(valor).toFixed(2)+")' style='cursor:pointer;white-space: nowrap' name='frete' id='motoboy' value='"+parseFloat(valor).toFixed(2).replace('.', ',')+"'><b> Dedicado</b><br> "+descricao+" valor R$ "+parseFloat(valor).toFixed(2).replace('.', ',');
 if(peso >= min && peso <= max ){
     document.getElementById('poeirao').innerHTML= box;
-console.log(valor);
 }
 });
 
