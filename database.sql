@@ -1,6 +1,6 @@
 CREATE TABLE IF NOT EXISTS `ecommerce_motoboy` ( 
 `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-`all` text DEFAULT NULL
+`tudo` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 INSERT INTO `ecommerce_motoboy` (`id`, `tudo`) VALUES (1, NULL);
 
