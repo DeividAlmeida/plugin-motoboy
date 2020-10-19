@@ -9,7 +9,7 @@ $motoboy = DBRead('ecommerce_plugins','*', "WHERE id = '1'")[0];
 <script src="css_js/jquery.multifield.min.js"></script>
 <div class="card">
     <div class="card-header white">
-        <strong>Configuração Meio de Pagamento</strong>
+        <strong>Configuração Meio de Entrega</strong>
     </div>
     <form id="dedicado" method="post" onsubmit="return false">
         <div class="card-body">        
